@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column ;
 }
 .heading{
     background-color: #4b495f;
@@ -46,4 +47,11 @@
 .right{
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
+}
+
+.finished-state{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
