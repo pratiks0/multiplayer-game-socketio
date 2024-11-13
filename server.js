@@ -6,6 +6,12 @@ const io = new Server(httpServer, {
   cors: "http://localhost:5173/",
 });
 
+const path = require("path");
+app.get("/", (req, res) => {
+app.use(express.static(path.resolve(__dirname, "client", "build")));
+res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
+
 const allUsers = {};
 const allRooms = [];
 

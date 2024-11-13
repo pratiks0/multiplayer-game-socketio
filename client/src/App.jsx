@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Square from "./Square/Square";
+import Square from "./square/Square";
 import { io } from "socket.io-client";
 import Swal from "sweetalert2";
 
@@ -128,7 +128,7 @@ const App = () => {
     const username = result.value;
     setPlayerName(username);
 
-    const newSocket = io("http://localhost:3000", {
+    const newSocket = io(`${window.location.origin}`, {
       autoConnect: true,
     });
 
