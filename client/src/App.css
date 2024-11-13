@@ -55,3 +55,21 @@
     margin: 0;
     text-align: center;
 }
+
+.playOnline{
+    background-color: wheat;
+    font-size: 50px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+}
+.playOnline:hover{
+    font-size: 55px;
+    cursor: pointer;
+}
+.main-div{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
