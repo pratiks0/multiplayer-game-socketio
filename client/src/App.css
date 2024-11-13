@@ -1,75 +1,84 @@
-.body{
-    height: 90vh;
+.main-div {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column ;
-}
-.heading{
-    background-color: #4b495f;
+    margin-top: 5vh;
+    flex-direction: column;
+  }
+  
+  .playOnline {
+    font-weight: 700;
+    border: none;
+    background-color: #e4ca56;
+    font-size: 60px;
+    cursor: pointer;
+    margin-top: 40vh;
+    padding: 6px 10px;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    outline: none;
+  }
+  
+  .water-background {
+    background-color: #4b495f;
+  }
+  
+  .game-heading {
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
     font-size: 40px;
-}
-.square-wrapper{
+  }
+  
+  .square-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-}
-.left, .right{
-    height: 30px;
-    width: 120px;
-    background-color: #4b495f; 
-    padding-top: 5px;
-}
-.move-detection{
+  }
+  
+  .move-detection {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    font-size: 18px;
-}
-.left{
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-.right{
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-.finished-state{
+    width: 400px;
+  }
+  
+  .finished-state {
     font-size: 30px;
-    padding: 0;
-    margin: 0;
     text-align: center;
-}
-
-.playOnline{
-    background-color: wheat;
-    font-size: 50px;
-    border-radius: 5px;
-    outline: none;
-    font-weight: 700;
-}
-.playOnline:hover{
-    font-size: 55px;
-    cursor: pointer;
-}
-.main-div{
-    height: 90vh;
+  }
+  
+  .left,
+  .right {
+    height: 30px;
+    width: 120px;
+    background-color: red;
+    border-bottom-left-radius: 50px;
+    background-color: #4b495f;
+    border-top-right-radius: 50px;
+    padding-top: 7px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  .waiting {
+    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
+    align-items: center;
+    position: absolute;
+    font-size: 44px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .current-move-cross {
+    background-color: #3fa7f0 !important;
+  }
+  
+  .current-move-circle {
+    background-color: #dd7f9f !important;
+  }
